@@ -25,7 +25,7 @@
     <main>
         <div id="content">
             <div id="head">
-                <form action="https://duckduckgo.com/">
+                <form action="https://google.com/search">
                     <label for="q" autofocus>> find / </label>
                     <input type="text" name="q" autocomplete="off">
                 </form>
@@ -36,50 +36,48 @@
             </div>
             <div id="links">
                 <section>
-                    <h3>dev</h3>
+                    <h3>Socials</h3>
                         <ul>
-                            <li><a href="https://github.com">github</a></li>
-                            <li><a href="https://stackoverflow.com">stackoverflow</a></li>
-                            <li><a href="https://w3schools.com">w3schools</a></li>
+                            <li><a href="https://twitter.com">Twitter</a></li>
+                            <li><a href="https://reddit.com">Reddit</a></li>
+                            <li><a href="https://discord.com/app">Discord</a></li>
                         </ul>
                 </section>
                 <section>
-                    <h3>socials</h3>
+                    <h3>Entertainment</h3>
                         <ul>
-                            <li><a href="https://instagram.com">instagram</a></li>
-                            <li><a href="https://reddit.com">reddit</a></li>
-                            <li><a href="https://discord.com">discord</a></li>
-                            <li><a href="https://gmail.com">gmail</a></li>
-                            <li><a href="https://messages.google.com">gmessages</a></li>
+                            <li><a href="https://youtube.com">YouTube</a></li>
+                            <li><a href="https://netflix.com">Netflix</a></li>
+                            <li><a href="https://twitch.tv">Twitch</a></li>
+                            <li><a href="https://sflix.to">SFlix</a></li>
+                            <li><a href="https://animixplay.to">Animixplay</a></li>
+                            <li><a href="https://pornhub.com">PornHub</a></li>
                         </ul>
                 </section>
                 <section>
-                    <h3>entertainment</h3>
+                    <h3>Work</h3>
                         <ul>
-                            <li><a href="https://youtube.com">youtube</a></li>
-                            <li><a href="https://twitch.tv">twitch</a></li>
-                            <li><a href="https://netflix.com">netflix</a></li>
-                            <li><a href="https://www.crunchyroll.com/">crunchyroll</a></li>
+                            <li><a href="https://workspace.google.com/dashboard">Google Workspaces</a></li>
+                            <li><a href="https://trello.com">Trello</a></li>
+                            <li><a href="https://office.com">Microsoft Office</a></li>
+                            <li><a href="https://notion.so">Notion</a></li>
                         </ul>
                 </section>
             </div>
         </div>
     </main>
-    <footer>
-        <a href="https://github.com/eaaasun/startpage">Github</a>
-    </footer>
     <script type="module">
         // ----- CHANGE THESE VARIABLES
 
         // Do you want to show the weather?
-        const weather = false;
+        const weather = true;
         // Do you want animations?
         const animated = true;
 
         // Read the documentation for setting the weather API key
-        const apiKey = "[API KEY]";
-        const lat = 40.7127861;
-        const lon = -74.0134275;
+        const apiKey = "[API HERE]";
+        const lat = 0.0;
+        const lon = 0.0;
         const units = "imperial";
 
         // ----- DON'T TOUCH ANYTHING BELOW THIS UNLESS YOU KNOW WHAT YOU'RE DOING
@@ -145,7 +143,7 @@
             function playAnimation() {
                 var tl = anime.timeline({
                     easing: "easeInOutExpo",
-                    duration: 2000,
+                    duration: 1250, //
                 });
 
                 tl.add({
@@ -158,7 +156,7 @@
                             targets: "#img",
                             width: ["100%", "60%"],
                         },
-                        "-=1200"
+                        "-=800"  //
                     )
                     .add(
                         {
@@ -167,7 +165,7 @@
                             translateY: [10, 0],
                             delay: anime.stagger(15),
                         },
-                        "-=1800"
+                        "-=1000" //
                     );
             }
 

@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 
 :root {
-  --color-bg: #2e3440;
-  --color-bg-light: #3b4252;
-  --color-fg: #d8dee9;
+  --color-bg: #000000;
+  --color-bg-light: #808080;
+  --color-fg: #FFFFFF;
 
-  --color-link-hover: #8fbcbb;
-  --color-link: #81a1c1;
+  --color-link-hover: #bbc1c3;
+  --color-link: #A2AAAD;
 
   --font-family: "Source Code Pro", monospace;
 }
 
 * {
   box-sizing: border-box;
-  text-transform: lowercase;
+  /*text-transform: lowercase;*/
 }
 
 html,
@@ -44,7 +44,7 @@ header div#img {
 }
 
 header div#img img {
-  width: 25vw;
+  width: 30vw;
 }
 
 main {
@@ -92,18 +92,28 @@ form {
 form input {
   width: 75%;
   display: inline-block;
-  border: none;
+  border: solid 0;
   background-color: var(--color-bg-light);
   padding: 10px;
   color: var(--color-fg);
   font-family: var(--font-family);
   font-size: 2vw;
   border-radius: 8px;
+  transition: border-width 0.05s ease-in-out;
 }
 
 form input:focus {
+  border-width: 2.5px;
   outline: none;
+  /*outline-style: solid;*/
+  /*outline-width: .25vw;*/
+}
 
+form input:hover {
+  border-width: 2.5px;
+  outline: none;
+  /*outline-style: solid;*/
+  /*outline-width: .25vw;*/
 }
 
 footer {
